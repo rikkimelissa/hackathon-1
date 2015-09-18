@@ -1,0 +1,11 @@
+<launch>
+
+	<node pkg="balltrack" type="balltrack" name="node1v2.py" output="screen"/>
+	<node pkg="balltrack" type="balltrack" name="node2.py" output="screen"/>
+	<node pkg="usb_cam" type="usb_cam" name="usb_cam_node" output="screen"/>
+	<param name="param_video_device" value="/dev/video1">
+	<param name="pixel_format" value="yuyv"/>
+	<param name="camera_name" value="tracker_camera"/>
+
+</node>
+</launch>
